@@ -45,8 +45,8 @@ struct AppOnboardingView: View {
             HStack {
                 Spacer()
                 Button {
-                    if selection == steps.count - 1 {
-                        selection+=1
+                    if selection <= steps.count - 1 {
+                        selection += 1
                     } else {
                         showOnboarding.toggle()
                     }

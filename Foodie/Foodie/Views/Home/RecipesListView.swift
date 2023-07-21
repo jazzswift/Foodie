@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct RecipesListView: View {
+    
+    @State private var allRecipes = [Recipe]()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(allRecipes, id:\.self) { recipe in
+            RecipeDetailView(recipe: recipe)
+        }
+        .onAppear {
+            allRecipes = JSONFileManager.load("recipes")
+        }
     }
 }
 
