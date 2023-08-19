@@ -1,2 +1,4 @@
 # Foodie
-SwiftUI Tutorial
+Basic SwiftUI Tutorial
+
+With a few animations.
