@@ -26,7 +26,7 @@ struct BannerView: View {
             }
         }
         .frame(maxWidth: .infinity)
-        .background(Color("lightGreen"), in: RoundedRectangle(cornerRadius: 20))
+        .background(Color("lightGreen"), in: RoundedRectangle(cornerRadius: 15))
     }
 }
 
